@@ -47,15 +47,13 @@ Flow of Links for API :-
 ```
  Code Structure :-
     
-    baseUrl = https://schedulemgmt.herokuapp.com/api
+    mainProjDir = usermgmt
     
-    List of Events = baseUrl (Login Required)
-    Login = baseUrl/users/login
-    Logout = baseUrl/users/logout
-    Add Events = baseUrl/event/new
-    Detail of an Event = baseUrl/event/<event_id>  (Authentication required)
-    Update an Event = baseUrl/event/<event_id>/update (Authentication required)
-    Delete an Event = baseUrl/event/<event_id>/delete (Authentication required)
+    events -> manages event Create, Update, Delete
+    events\api -> manages event Create, Update, Delete for apis
+    
+    users -> manages user login and logout
+    users\api -> user management apis
     
 ``` 
 
