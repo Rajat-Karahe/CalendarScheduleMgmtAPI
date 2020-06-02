@@ -14,12 +14,12 @@ Following are the features provided:
 
 Instructions to access API's
 
->1. GET ALL YOUR EVENTS
+>1. GET ALL YOUR EVENTS:
 
 https://schedulemgmt.herokuapp.com/api is the base url to access all your created events, to access this events a user must Login.
   Request should be GET type with login credentials: 
   
->2. CREATE AN ACCOUNT
+>2. CREATE AN ACCOUNT:
 
 https://schedulemgmt.herokuapp.com/api/users/register :- To create a new user account, it accepts a POST type request in following formate
 ```
@@ -32,7 +32,7 @@ https://schedulemgmt.herokuapp.com/api/users/register :- To create a new user ac
 
 to regiter you must provide unique username and email id to register as a unique user, it will raise a validation error if username or email is already taken. It accepts Password of minimum 8 characters(Otherwise validation error)
 
->3. LOGIN
+>3. LOGIN:
 
 https://schedulemgmt.herokuapp.com/api/users/login :- Users can login using this URL it accepts a POST type request in following formate,
 
@@ -44,12 +44,12 @@ https://schedulemgmt.herokuapp.com/api/users/login :- Users can login using this
 
 ```
 
->4.LOGOUT
+>4.LOGOUT:
 
 https://schedulemgmt.herokuapp.com/api/users/logout :- To logout
 
 
->5. DETAILED VIEW OF AN EVENT
+>5. DETAILED VIEW OF AN EVENT:
 
 https://schedulemgmt.herokuapp.com/api/event/<id>/ :- In order to access detailed view of any of your Events send a GET request to this url by putting id of your event just after event (A user will only be able to access events created by him/her, for other's events you will get "detail not found exception")
   
