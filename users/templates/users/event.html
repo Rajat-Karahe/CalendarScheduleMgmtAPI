@@ -1,0 +1,15 @@
+{% extends "users/base.html" %}
+{% block content %}
+	<h1> {{user.username}} </h1>
+    {% for event in events %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ event.author }}</a>
+              <small class="text-muted">{{ event.event_date }}</small>
+            </div>
+            <h2><a class="article-title" href="{% url 'event-detail' event.id %}">{{ event.title }}</a></h2>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
