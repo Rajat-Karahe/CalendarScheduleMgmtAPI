@@ -109,7 +109,7 @@ Input JSON form:
   }
   ```
 
->6. UPDATE EVENT:
+>7. UPDATE EVENT:
 
  https://schedulemgmt.herokuapp.com/api/event/event_id/update :- If request is GET user will get detailed view of his/her Event if request id PUT it will update given event details:
 Input JSON form:
@@ -120,7 +120,7 @@ Input JSON form:
   }
   ```
   
->7. DELETE EVENT:
+>8. DELETE EVENT:
 
 https://schedulemgmt.herokuapp.com/api/event/event_id/delete :- It will delete and event, A user will only be able to delete his/her own post for all other case will get a "detail not found error"
 
