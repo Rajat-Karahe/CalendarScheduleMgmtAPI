@@ -21,7 +21,7 @@ Flow of Links for Web App :-
     Login = baseUrl/login
     Logout = baseUrl/logout
     List Created Events = baseUrl/events (login required)
-    Add Events = baseUrl/event/new
+    Create Event = baseUrl/event/new
     Detail of an Event = baseUrl/event/<event_id>
     Update an Event = baseUrl/event/<event_id>/update
     Delete an Event = baseUrl/event/<event_id>/delete
@@ -38,7 +38,7 @@ Flow of Links for API :-
     List of Events = baseUrl (Login Required)
     Login = baseUrl/users/login
     Logout = baseUrl/users/logout
-    Add Events = baseUrl/event/new
+    Create Event = baseUrl/event/new
     Detail of an Event = baseUrl/event/<event_id>  (Authentication required)
     Update an Event = baseUrl/event/<event_id>/update (Authentication required)
     Delete an Event = baseUrl/event/<event_id>/delete (Authentication required)
@@ -97,8 +97,19 @@ https://schedulemgmt.herokuapp.com/api/users/logout :- To logout
 >5. DETAILED VIEW OF AN EVENT:
 
 https://schedulemgmt.herokuapp.com/api/event/event_id/ :- In order to access detailed view of any of your Events send a GET request to this url by putting id of your event just after event (A user will only be able to access events created by him/her, for other's events you will get "detail not found exception")
-  
+
 >6. CREATE EVENT:
+
+ https://schedulemgmt.herokuapp.com/api/event/new :- You can create a new event, you just have to provide title and event_date however it automatically adds author and id:
+Input JSON form:
+  ```
+  {
+    "title" :
+    "event_date" :
+  }
+  ```
+
+>6. UPDATE EVENT:
 
  https://schedulemgmt.herokuapp.com/api/event/event_id/update :- If request is GET user will get detailed view of his/her Event if request id PUT it will update given event details:
 Input JSON form:
