@@ -100,7 +100,7 @@ https://schedulemgmt.herokuapp.com/api/event/event_id/ :- In order to access det
   
 >6. CREATE EVENT:
 
- https://schedulemgmt.herokuapp.com/api/event/event_id/update :- If request is GET user will get detailed view of his/her Event if request id POST it will update given event details:
+ https://schedulemgmt.herokuapp.com/api/event/event_id/update :- If request is GET user will get detailed view of his/her Event if request id PUT it will update given event details:
 Input JSON form:
   ```
   {
@@ -112,3 +112,6 @@ Input JSON form:
 >7. DELETE EVENT:
 
 https://schedulemgmt.herokuapp.com/api/event/event_id/delete :- It will delete and event, A user will only be able to delete his/her own post for all other case will get a "detail not found error"
+
+
+example:- curl -H 'Accept: application/json; indent=4' -u username:password https://schedulemgmt.herokuapp.com/api/
