@@ -96,11 +96,11 @@ https://schedulemgmt.herokuapp.com/api/users/logout :- To logout
 
 >5. DETAILED VIEW OF AN EVENT:
 
-https://schedulemgmt.herokuapp.com/api/event/<id>/ :- In order to access detailed view of any of your Events send a GET request to this url by putting id of your event just after event (A user will only be able to access events created by him/her, for other's events you will get "detail not found exception")
+https://schedulemgmt.herokuapp.com/api/event/event_id/ :- In order to access detailed view of any of your Events send a GET request to this url by putting id of your event just after event (A user will only be able to access events created by him/her, for other's events you will get "detail not found exception")
   
 >6. CREATE EVENT:
 
- https://schedulemgmt.herokuapp.com/api/event/<id>/update :- If request is GET user will get detailed view of his/her Event if request id POST it will update given event details:
+ https://schedulemgmt.herokuapp.com/api/event/event_id/update :- If request is GET user will get detailed view of his/her Event if request id POST it will update given event details:
 Input JSON form:
   ```
   {
@@ -111,4 +111,4 @@ Input JSON form:
   
 >7. DELETE EVENT:
 
-https://schedulemgmt.herokuapp.com/api/event/<id>/delete :- It will delete and event, A user will only be able to delete his/her own post for all other case will get a "detail not found error"
+https://schedulemgmt.herokuapp.com/api/event/event_id/delete :- It will delete and event, A user will only be able to delete his/her own post for all other case will get a "detail not found error"
